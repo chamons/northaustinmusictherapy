@@ -1,0 +1,48 @@
+$body-color: #96d4de
+$dark-blue: #196575
+$white: #ffffff
+$black: #000000
+
+body
+	background-color: $body-color
+
+.page-header
+	position: relative
+	height:21px
+	background-color: $dark-blue
+
+.active-menu-item
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+
+// Bootstrap is very specific on navbar styles
+.navbar-light .navbar-nav .nav-link.active a
+	color: $white
+
+.navbar-light .navbar-nav .nav-link.active img
+	margin: auto
+
+.navbar-light .navbar-nav .nav-link
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	color: $black
+	font-weight: bold
+
+.navbar-light .navbar-nav .navbar-text
+	font-weight: bold
+	text-align: center
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+
+.navbar
+	background-color: $body-color
+
+
+.home-header
+	width: 100%
+
+.navbar-brand
+	float: left
