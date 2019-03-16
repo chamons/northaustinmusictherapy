@@ -11,23 +11,23 @@
 	</head>
 	<body>
 		<div class="page-header"></div>
-		<nav class="navbar navbar-expand-sm navbar-light flex-nowrap">
-			<a class="navbar-brand  w-25" href="#"><img src="images/Common/NAMT Logo.svg" width="180" alt=""></a> 
+		<nav class="navbar navbar-expand navbar-light flex-nowrap">
+			<a class="navbar-brand  w-25" href="#"><img src="images/Common/Logo.svg" width="180" alt=""></a> 
 			<div class="navbar w-100 justify-content-center">
-				<ul class="navbar-nav mx-auto">
+				<div class="navbar-nav mx-auto">
 					<div id="active-menu-item" class="nav-item nav-link active" >
 						<img src="images/Common/MenuNote.svg" width="16" alt="">
 						<a href="#">Home</a>
 					</div>
-					<a class="nav-item navbar-text" |>|</a>
+					<a class="nav-item navbar-text">|</a>
 					<a class="nav-item nav-link" href="#">About</a>
-					<a class="nav-item navbar-text" |>|</a>
-					<a class="nav-item nav-link" href="">Music Therapy</a></li>
-					<a class="nav-item navbar-text" |>|</a>
+					<a class="nav-item navbar-text">|</a>
+					<a class="nav-item nav-link" href="">Music Therapy</a>
+					<a class="nav-item navbar-text">|</a>
 					<a class="nav-item nav-link" href="#">Services</a>
-					<a class="nav-item navbar-text" |>|</a>
+					<a class="nav-item navbar-text">|</a>
 					<a class="nav-item nav-link" href="#">Resources</a>
-				</ul>
+				</div>
 			</div>
 			<div class="w-25 menu-share-set">
 				<ul class="nav navbar-nav flex-row justify-content-end flex-nowrap">
@@ -37,11 +37,76 @@
 				</ul>
 			</div>
 		</nav>
-		<img class="home-header" src="images/Home/HomeHeader.svg" alt="">
+		<img id="home-header" src="images/Home/HomeHeader.svg" alt="">
 
-		<div class="tagline">Backed by research  |   Recognized by results   |   Expanding possibilities</div>
+		<p id="tagline">Backed by research  |   Recognized by results   |   Expanding possibilities</p>
+
+		<div id="home-welcome-block" class="container-fluid">
+			<div class="row">
+				<div class="col-2 welcome-image-container-middle"> 
+					<img class="img-fluid" id="home-notes" src="images/Home/Notes.jpg" alt="">
+				</div>
+				<div class="col-8">
 	
+					<h2>Welcome to North Austin Music Therapy!</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare magna non faucibus vehicula. Pellentesque nec sapien quis dolor consectetur aliquet. Ut eget tellus vehicula, semper libero accumsan, pretium dolor. Sed varius metus quis magna eleifend tincidunt. Nulla facilisi. Nulla vel orci non nibh semper efficitur. Nam porta sodales erat, ac gravida erat feugiat non. In eu neque id justo varius condimentum.</p>
+
+					<p>Aliquam erat volutpat. Mauris et velit mattis, tristique eros non, luctus massa. Nullam justo elit, luctus non dignissim quis, facilisis eu nibh. Nullam tristique eu mi ac lacinia. Nunc neque turpis, molestie a lobortis nec, facilisis a elit. Maecenas vulputate mollis magna nec ultricies. Aliquam non condimentum quam. Donec lectus sem, faucibus tincidunt blandit in, dapibus a est. Curabitur lorem urna, finibus consectetur convallis non, molestie ut eros. Suspendisse potenti. Maecenas egestas tincidunt orci, non congue mauris facilisis sit amet. Aenean sit amet semper ligula.</p>
+
+					<p>Aliquam erat volutpat. Mauris et velit mattis, tristique eros non, luctus massa. Nullam justo elit, luctus non dignissim quis, facilisis eu nibh. Nullam tristique eu mi ac lacinia. Nunc neque turpis, molestie a lobortis nec, facilisis a elit. Maecenas vulputate mollis magna nec ultricies. Aliquam non condimentum quam. Donec lectus sem, faucibus tincidunt blandit in, dapibus a est. Curabitur lorem urna, finibus consectetur convallis non, molestie ut eros. Suspendisse potenti. Maecenas egestas tincidunt orci, non congue mauris facilisis sit amet. Aenean sit amet semper ligula.</p>
+				</div>
+				<div class="col-2 welcome-image-container-end"> 
+					<img id="home-staff" src="images/Home/Staff.jpg" alt="">
+				</div>
+			</div>
+		</div>
 		
+		<div id="home-bottom-section">
+			<div id="home-bottom-block" class="container-fluid">
+				<div class="row">
+					<div class="col"> 
+						<img src="images/Home/Bottom1.jpg" width="200" alt="">
+						<h2>What is Music Therapy?</h2>
+						<p> Integer volutpat id ante sed suscipit. Etiam sollicitudin risus facilisis blandit dictum. Sed sodales eros velit, ut euismod justo tempus non. Phasellus a magna eu ligula dictum auctor a in orci. Cras eget scelerisque libero, sit amet ullamcorper orci. In fringilla finibus ornare. Aliquam erat volutpat. Nunc auctor elementum pellentesque. Suspendisse luctus, mi accumsan condimentum auctor, metus felis fringilla orci, vitae efficitur eros lectus at massa. Nulla facilisi. Sed facilisis, turpis quis cursus gravida, tellus dolor euismod tellus, et luctus mauris tellus quis ipsum. Aliquam nisl nibh, dictum at velit id, sodales fringilla eros. </p>
+						<a href="#">Learn more >></a>
+					</div>
+					<div class="col"> 
+						<img src="images/Home/Bottom2.jpg" width="200" alt="">
+						<h2>Our services</h2>
+						<p> Sed condimentum, mauris sit amet placerat auctor, orci mauris finibus lacus, in ultrices ipsum nisi eu nibh. Vivamus feugiat suscipit varius. Donec at lorem nec enim semper faucibus vitae nec turpis. Morbi at faucibus nisi, tincidunt pellentesque erat. Praesent rutrum risus ut viverra pharetra. Phasellus eu diam a dui vulputate suscipit. Maecenas hendrerit eros nulla, blandit pretium nibh venenatis laoreet. Aliquam congue placerat nulla, et bibendum metus fermentum in. Nunc quis ante quis velit pulvinar dapibus vel vulputate nibh. Donec varius sem turpis, at feugiat felis pulvinar eu. Proin tincidunt augue ut enim suscipit, in posuere metus suscipit. Maecenas eget lacinia libero. </p>
+						<a href="#">Learn more about our seniors program >></a>
+						<br/>
+						<a href="#">Learn more about our children's program >></a>
+					</div>
+					<div class="col"> 
+						<img src="images/Home/Bottom3.jpg" width="200" alt="">
+						<h2>What people are saying</h2>
+						<p> Sed condimentum, mauris sit amet placerat auctor, orci mauris finibus lacus, in ultrices ipsum nisi eu nibh. Vivamus feugiat suscipit varius. Donec at lorem nec enim semper faucibus vitae nec turpis. Morbi at faucibus nisi, tincidunt pellentesque erat. Praesent rutrum risus ut viverra pharetra. Phasellus eu diam a dui vulputate suscipit. Maecenas hendrerit eros nulla, blandit pretium nibh venenatis laoreet. Aliquam congue placerat nulla, et bibendum metus fermentum in. Nunc quis ante quis velit pulvinar dapibus vel vulputate nibh. Donec varius sem turpis, at feugiat felis pulvinar eu. Proin tincidunt augue ut enim suscipit, in posuere metus suscipit. Maecenas eget lacinia libero. </p>
+						<a href="#">Learn more >></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="page-footer-start"> </div>
+
+		<div id="page-footer-content" class="container-fluid">
+			<div class="row">
+				<div class="w-25"></div> 
+				<div class="w-50"> 
+					<h1 id="CallToAction">Call today for a FREE screening! (512) 422-9694</h1>
+					<h4 id="Copyright">Copyright © 2019 North Austin Music Therapy.</h4>
+				</div>
+				<div class="w-25">
+					<div id="footer-share-set"> 
+						<img src="images/Common/facebook-logo.png" height="18" alt="Facebook">
+						<img src="images/Common/facebook-logo.png" height="18" alt="Facebook">
+						<img src="images/Common/facebook-logo.png" height="18" alt="Facebook">
+					</div>
+				</div> 
+			</div>
+			</div>
+
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
