@@ -1,12 +1,12 @@
 @import colors
+@import fonts
 
 #home-header
 	width: 100%
 
 #tagline
-	font-family: "Montserrat"
+	@extend %dark-text-template
 	font-style: italic
-	background-color: $dark-blue-green
 	text-align: center
 	padding-top: 6px
 	padding-bottom: 6px
@@ -17,10 +17,9 @@
 #home-welcome-block
 	background-color: $white
 	h2
+		@extend %dark-text-template
 		padding-top: 40px
 		text-align: left
-		color: $dark-font-green
-		font-family: "Montserrat"
 		
 
 .welcome-image-container-middle

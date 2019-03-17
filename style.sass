@@ -2,6 +2,7 @@
 ---
 
 @import colors
+@import fonts
 @import menu
 
 body
@@ -29,13 +30,13 @@ body
 	padding: .5rem 1rem
 
 #CallToAction
+	@extend %default-font
 	text-align: center
-	font-family: "Montserrat"
 	font-size: 36px
 
 #Copyright
+	@extend %default-font
 	text-align: center
-	font-family: "Montserrat"
 	font-size: 12px
 
 #footer-share-set
@@ -46,16 +47,24 @@ body
 	border-radius: 50%
 	box-shadow: 3px 3px 10px
 
-#floating-image-right
+.floating-image-right
 	@extend %floating-image-template
 	float: right
 	margin-right: 80px
-	margin-top: 330px
 
-#floating-image-left
+.floating-image-left
 	@extend %floating-image-template
 	float: left
 	margin-left: 70px
+
+.floating-down-half
+	margin-top: 330px
+
+.floating-down-twothirds
+	margin-top: 640px
+
+.floating-down-full
+	margin-top: 1100px
 
 %expand-button-template
 	color: $dark-font-green !important
@@ -75,3 +84,4 @@ body
 @import home
 @import services
 @import therapy
+@import resources
