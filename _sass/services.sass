@@ -1,0 +1,30 @@
+@import colors
+
+.services-content
+	background-color: $white
+	padding-top: 30px
+
+	h2
+		font-family: "Montserrat"
+		color: $dark-blue-green
+
+#service-image
+	border-radius: 50%
+	box-shadow: 3px 3px 10px
+	float: left
+	margin-left: 70px
+
+%expand-button-template
+	color: $dark-font-green !important
+	font-size: 16px
+	text-decoration: underline !important
+
+.service-collapse-button
+	@extend %expand-button-template
+
+.service-expand-button
+	@extend %expand-button-template
+
+.service-expand-button:not(.collapsed)
+	display: none
+
