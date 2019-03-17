@@ -7,18 +7,18 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" href="style.css">
 
-		<title>North Austin Music Therapy - {{ page.name | capitalize | remove: ".html" }}</title>
+		<title>North Austin Music Therapy - {{ page.title }}</title>
 	</head>
 	<body >
 		<div class="page-header"></div>
-{% include menu.html %}
+{%- include menu.html -%}
 
 
-		{% if page.skip-header != true %}
+		{%- if page.skip-header != true -%}
 		<img src="images/Common/WaveHeader.png" alt="">
-		{% endif %}
+		{%- endif -%}
 
-		<div class="{{ page.name | downcase | remove: ".html" }}-content">
+		<div class="{{ page.title | downcase | remove: ".html" }}-content">
 {{ content }}
 		
 		<div id="page-footer-start" class="page-footer-color-{{page.background-color}}"> </div>

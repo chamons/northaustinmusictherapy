@@ -42,5 +42,36 @@ body
 	float: right
 	padding-right: 40px
 
+%floating-image-template
+	border-radius: 50%
+	box-shadow: 3px 3px 10px
+
+#floating-image-right
+	@extend %floating-image-template
+	float: right
+	margin-right: 80px
+	margin-top: 330px
+
+#floating-image-left
+	@extend %floating-image-template
+	float: left
+	margin-left: 70px
+
+%expand-button-template
+	color: $dark-font-green !important
+	font-size: 16px
+	text-decoration: underline !important
+
+.collapse-button
+	@extend %expand-button-template
+
+.expand-button
+	@extend %expand-button-template
+
+.expand-button:not(.collapsed)
+	display: none
+
+
 @import home
 @import services
+@import therapy

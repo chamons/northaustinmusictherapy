@@ -1,0 +1,7 @@
+{%- if include.button-text -%}
+<h2><a data-toggle="collapse" data-target="#{{include.link}}" aria-expanded="false" aria-controls="{{include.link}}">
+{{include.button-text}} <u>&#x3E;&#x3E;</u></a></h2>
+{%- else -%}
+<a class="{% if include.shown == 'true' %}expand-button collapsed{% else %}collapse-button{% endif %}" data-toggle="collapse" data-target="#{{include.link}}" aria-expanded="false" aria-controls="{{include.link}}">
+{{include.text}} &#x3E;&#x3E;</a>
+{%- endif -%}
