@@ -1,0 +1,28 @@
+		<nav class="navbar navbar-expand navbar-light flex-nowrap">
+			<a class="navbar-brand  w-25" href="#"><img src="images/Common/Logo.svg" width="180" alt=""></a> 
+			<div class="navbar w-100 justify-content-center">
+				<div class="navbar-nav mx-auto">
+					{% for item in site.data.menu %}
+					{% if page.url == item.link %}
+					<div id="active-menu-item" class="nav-item nav-link active" >
+						<img src="images/Common/MenuNote.svg" width="16" alt="">
+						<a class="nav-item" href="#">{{item.name}}</a>
+					</div>
+					{% else %}
+					<a class="nav-item nav-link" href="{{item.link}}">{{item.name}}</a>					
+					{% endif %}
+					{% if item.name != "Resources" %}
+					<a class="nav-item navbar-text">|</a>
+					{% endif %}
+					{% endfor %}	
+				</div>
+			</div>
+			<div class="w-25 menu-share-set">
+				<ul class="nav navbar-nav flex-row justify-content-end flex-nowrap">
+					<li class="nav-item"> <img src="images/Common/facebook-logo.png" height="18" alt="Facebook"> </li>
+					<li class="nav-item"> <img src="images/Common/facebook-logo.png" height="18" alt="Facebook"> </li>
+					<li class="nav-item"> <img src="images/Common/facebook-logo.png" height="18" alt="Facebook"> </li>
+				</ul>
+			</div>
+		</nav>
+
