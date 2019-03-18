@@ -1,0 +1,87 @@
+@import colors
+@import fonts
+
+.about-content
+	background-color: $white
+	padding-top: 30px
+	h1
+		@extend %dark-text-template
+		font-size: 20px
+		margin-top: 10px
+	h2
+		@extend %dark-text-template
+		font-size: 18px
+		font-weight: bold
+		margin-bottom: 0px
+	h3
+		@extend %default-font
+		font-size: 14px
+		font-weight: bold
+		margin-bottom: 0px
+	li 
+		@extend %default-font
+		margin-top: 10px
+		font-size: 12px
+	ul
+		margin-top: 10px
+		padding-left: 10px
+		margin-bottom: 10px
+	p
+		@extend %default-font
+		font-size: 14px
+		margin-bottom: 0px
+	
+	.bio
+		p
+			@extend %default-font
+			font-size: 14px
+			margin-bottom: 10px
+			
+
+#kindWords
+	background-color: $white-sand
+	margin-top: 80px
+	margin-bottom: 80px
+	h1
+		text-align: center
+		padding-top: 35px
+		font-size: 30px
+		font-style: italic
+
+.carousel-item
+	background-size: cover
+	background-position: center center
+	height: 180px
+	padding-left: 140px
+	padding-right: 140px
+
+.top-bio
+	margin-top: 40px
+	background-color: $dark-sand
+	
+.mid-bio
+	background-color: $white-sand
+
+.bottom-bio
+	background-color: $super-white-sand
+	margin-bottom: 60px
+
+.bio
+	padding: 15px
+	padding-top: 25px
+
+#home-bottom-block
+	padding-top: 25px
+
+.coming-soon
+	width: 145px
+	height: 145px
+	line-height: 145px
+	text-align: center
+	background-color: #dddddd
+	p
+		@extend %dark-text-template
+		font-size: 30px
+		display: inline-block
+		vertical-align: middle
+		line-height: normal

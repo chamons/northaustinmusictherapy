@@ -12,6 +12,8 @@ body
 	position: relative
 	height: 21px
 	background-color: $deep-blue
+	z-index: 1
+	box-shadow: 0px 1px 2px
 
 .page-footer-color-sand
 	background-color: $sand
@@ -80,8 +82,22 @@ body
 .expand-button:not(.collapsed)
 	display: none
 
+.notes
+	object-fit: scale-down
 
+.image-container-middle
+	display: flex
+	justify-content: center
+
+.image-container-end
+	display: flex
+	justify-content: flex-end
+	overflow: hidden
+	padding-right: 0px
+
+
+@import about
 @import home
+@import resources
 @import services
 @import therapy
-@import resources
