@@ -2,11 +2,14 @@
 ---
 
 @import colors
-@import fonts
 @import menu
+
+%default-font
+	font-family: "Montserrat"
 
 body
 	background-color: $light-blue
+	@extend %default-font
 
 .page-header
 	position: relative
@@ -32,12 +35,10 @@ body
 	padding: .5rem 1rem
 
 #CallToAction
-	@extend %default-font
 	text-align: center
 	font-size: 36px
 
 #Copyright
-	@extend %default-font
 	text-align: center
 	font-size: 12px
 
