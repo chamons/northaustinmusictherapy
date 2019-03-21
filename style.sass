@@ -11,6 +11,18 @@ body
 	background-color: $light-blue
 	@extend %default-font
 
+h2
+	font-size: 2vw
+p
+	font-size: 1vw
+
+@media (max-width: 1199px) 
+	h2
+		font-size: 3vw
+	p
+		font-size: 1.5vw
+
+
 .page-header
 	position: relative
 	height: 21px
@@ -28,37 +40,27 @@ body
 	background-image: url("images/Common/Bottom.svg")
 	background-size: 100%
 	background-repeat: no-repeat
-	height: 100px
+	height: 40px
 
 #page-footer-content
+	margin-top: 40px
 	margin-bottom: 50px
-	padding: .5rem 1rem
 
 #CallToAction
 	text-align: center
-	font-size: 36px
+	font-size: 2.0vw
 
 #Copyright
 	text-align: center
 	font-size: 12px
 
-#footer-share-set
+.footer-share-set
 	float: right
 	padding-right: 40px
 
-%floating-image-template
+.round-image
 	border-radius: 50%
 	box-shadow: 3px 3px 10px
-
-.floating-image-right
-	@extend %floating-image-template
-	float: right
-	margin-right: 80px
-
-.floating-image-left
-	@extend %floating-image-template
-	float: left
-	margin-left: 70px
 
 .floating-down-half
 	margin-top: 330px
@@ -71,7 +73,6 @@ body
 
 %expand-button-template
 	color: $dark-font-green !important
-	font-size: 16px
 	text-decoration: underline !important
 
 .collapse-button
@@ -98,6 +99,24 @@ body
 
 .border-image
 	border: 6px solid $white
+
+.left-collapse-image
+	min-width: 250px
+
+@media (max-width: 991px) 
+	#CallToAction
+		font-size: 18px
+	#page-footer-content
+		margin-top: 30px
+		margin-bottom: 10px
+
+	#page-footer-content
+		margin-top: 30px
+		margin-bottom: 10px
+
+	.navbar
+		padding-bottom: 2rem
+
 
 @import about
 @import home
