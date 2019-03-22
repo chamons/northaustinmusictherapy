@@ -10,18 +10,23 @@
 body
 	background-color: $light-blue
 	@extend %default-font
-
+a
+	font-size: 14px
+	color: $dark-blue-green
+h1
+	color: $dark-blue-green
+	font-size: 2.5rem
+	a
+		font-size: 2.5rem
 h2
-	font-size: 2vw
+	color: $dark-blue-green
+	font-size: 2rem
+	a
+		color: $dark-font-green
+		font-size: 2rem
+h3
+	font-size: 1.5rem
 p
-	font-size: 1vw
-
-@media (max-width: 1199px) 
-	h2
-		font-size: 3vw
-	p
-		font-size: 1.5vw
-
 
 .page-header
 	position: relative
@@ -100,20 +105,15 @@ p
 .border-image
 	border: 6px solid $white
 
-.left-collapse-image
-	min-width: 250px
-
 @media (max-width: 991px) 
 	#CallToAction
 		font-size: 18px
 	#page-footer-content
 		margin-top: 30px
 		margin-bottom: 10px
-
 	#page-footer-content
 		margin-top: 30px
 		margin-bottom: 10px
-
 	.navbar
 		padding-bottom: 2rem
 
