@@ -26,7 +26,14 @@ h2
 		font-size: 2rem
 h3
 	font-size: 1.5rem
+	color: $dark-blue-green
+h4
+	font-size: 1.0rem
 p
+	font-size: 1rem
+li
+	font-size: 1rem
+	
 
 .page-header
 	position: relative
@@ -50,6 +57,10 @@ p
 #page-footer-content
 	margin-top: 40px
 	margin-bottom: 50px
+	padding-left: 32px
+	padding-right: 32px
+	h1
+		color: $black
 
 #CallToAction
 	text-align: center
@@ -117,6 +128,9 @@ p
 	.navbar
 		padding-bottom: 2rem
 
+@media (max-width: 1199px) 
+	.row-center-on-less-xl
+		justify-content: center
 
 @import about
 @import home

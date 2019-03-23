@@ -1,6 +1,7 @@
 @import colors
 
 $menu-font-size: 22px
+$menu-small-font-size: 16px
 
 #active-menu-item
 	display: flex
@@ -9,7 +10,6 @@ $menu-font-size: 22px
 
 	a
 		color: $white
-
 	img
 		margin: auto
 
@@ -22,6 +22,12 @@ $menu-font-size: 22px
 	color: $black
 	a
 		font-size: $menu-font-size
+	
+@media (max-width: 1199px) 
+	%navbar-shared
+		font-size: $menu-small-font-size
+		a
+			font-size: $menu-small-font-size
 
 .navbar-light .navbar-nav .nav-link
 	@extend %navbar-shared
@@ -31,12 +37,14 @@ $menu-font-size: 22px
 	padding-left: 12px
 	padding-right: 12px
 
+@media (max-width: 1199px) 
+	.navbar-light .navbar-nav .navbar-text
+		padding-left: 4px
+		padding-right: 4px
+
 .navbar
 	background-color: $light-blue
 
-.navbar-brand
-	padding-left: 20px
-	float: left
-
-.menu-share-set
-	padding-right: 40px
+.share-item
+	display: inline
+	width: 20px

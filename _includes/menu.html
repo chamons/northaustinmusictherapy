@@ -1,5 +1,10 @@
 		<nav class="navbar navbar-expand navbar-light flex-nowrap">
-			<a class="navbar-brand  w-25" href="#"><img src="images/Common/Logo.svg" width="180" alt=""></a> 
+			<div style="flex-basis: 180px">
+				<a class="navbar-brand" href="#"><img src="images/Common/Logo.svg" width="180" alt=""></a> 
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
 			<div class="navbar w-100 justify-content-center">
 				<div class="navbar-nav mx-auto">
 					{%- for item in site.data.menu -%}

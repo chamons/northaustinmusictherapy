@@ -4,12 +4,12 @@ title: Music Therapy
 background-color: white
 ---
 
-<div id="therapy-content" class="container-fluid">
-	<div class="row">
+<div id="therapy-container" class="container-fluid">
+	<div class="row-center-on-less-xl row">
 		<div class="col-2 d-none d-xl-block"> 
 			<img class="img-fluid border-image round-image" src="images/Therapy/Guitar.jpg" width="225" alt="">
 		</div>
-		<div class="col-10"> 
+		<div class="col-8"> 
 			{% include expandButton.html button-text="What is Music Therapy?" link='what-therapy' shown='true' %}
 			<div class="collapse" id="what-therapy">
 			<p>Music therapy is an evidence-based and goal-directed process that uses musical
@@ -55,7 +55,7 @@ background-color: white
 			{% include expandButton.html link='therapy-goals' text='Less' %}
 			</p></div>
 
-			{% include expandButton.html button-text="How does Treatment Work?" link='therapy-works' shown='true' %}
+			{% include expandButton.html button-text="How Does Treatment Work?" link='therapy-works' shown='true' %}
 			<div class="collapse" id="therapy-works">
 			<p>Music therapy, much like any other therapy, starts with an assessment to best
 			understand where a client is at in the current moment and where he or she wants or
@@ -90,7 +90,7 @@ background-color: white
 			{% include expandButton.html link='insurance' text='Less' %}
 			</p></div>
 
-			{% include expandButton.html button-text="How do I know if Music Therapy is the right choice? " link='choice' shown='true' %}
+			{% include expandButton.html button-text="How Do I Know if Music Therapy is the Right Choice? " link='choice' shown='true' %}
 			<div class="collapse" id="choice">
 			<p>North Austin Music Therapy offers a free initial screening session to help you determine
 			if pursuing music therapy services is the right choice. Initial screenings are a chance to
@@ -103,7 +103,7 @@ background-color: white
 			{% include expandButton.html link='choice' text='Less' %}
 			</p></div>
 
-			{% include expandButton.html button-text="Where can I find out more about Music Therapy?" link='find-more' shown='true' %}
+			{% include expandButton.html button-text="Where Can I Find Out More About Music Therapy?" link='find-more' shown='true' %}
 			<div class="collapse" id="find-more">
 			<p>Feel free to contact North Austin Music Therapy directly for more information about the
 			benefits of music therapy and how it specifically could support you and/or your loved
@@ -111,6 +111,8 @@ background-color: white
 			information and resources related to the field and practice of music therapy.
 			{% include expandButton.html link='find-more' text='Less' %}
 			</p></div>
+		</div>
+		<div class="col-2 d-none d-xl-block"> 
 		</div>
 	</div>
 </div>
