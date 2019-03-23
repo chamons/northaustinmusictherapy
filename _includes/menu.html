@@ -1,27 +1,57 @@
-		<nav class="navbar navbar-expand navbar-light flex-nowrap">
-			<div style="flex-basis: 180px">
+		<script>
+			window.onresize = function() { closeIfNotTabletSize (); };
+			function closeIfNotTabletSize () {
+				if (window.innerWidth > 991) {
+					document.getElementById ("navbarContent").classList.remove ("show")
+				}
+			}
+		</script>
+		<nav class="navbar navbar-expand-lg navbar-light flex-nowrap justify-content-start">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div style="flex-basis: 180px" class="flex-nowrap justify-start">
 				<a class="navbar-brand" href="#"><img src="images/Common/Logo.svg" width="180" alt=""></a> 
 			</div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="navbar w-100 justify-content-center">
+
+			<div class="collapse navbar-collapse w-100 justify-content-center">
+				{% comment %} This is duplicated below for the popup (outside of top bar) {% endcomment %}
 				<div class="navbar-nav mx-auto">
 					{%- for item in site.data.menu -%}
 					{%- if page.url == item.link -%}
 					<div id="active-menu-item" class="nav-item nav-link active" >
-						<img src="images/Common/MenuNote.svg" width="16" alt="">
+						<img class="menu-note" src="images/Common/MenuNote.svg" width="16" alt="">
 						<a class="nav-item" href="#">{{item.name}}</a>
 					</div>
 					{%- else -%}
-					<a class="nav-item nav-link" href="{{item.link}}">{{item.name}}</a>					
+					<a class="nav-item nav-link" href="{{item.link}}">{{item.name}}</a>
 					{%- endif -%}
 					{%- if item.name != "Resources" -%}
-					<a class="nav-item navbar-text">|</a>
+					<a class="menu-div nav-item navbar-text">|</a>
 					{%- endif -%}
-					{%- endfor -%}	
+					{%- endfor -%}
 				</div>
 			</div>
 			{%- include share.html -%}
 		</nav>
+		{% comment %} This is duplicated above (in the nav bar) {% endcomment %}
+		<div id="navbarContent" class="collapse navbar-collapse w-100 justify-content-center">
+			<div class="navbar-nav mx-auto">
+				{%- for item in site.data.menu -%}
+				{%- if page.url == item.link -%}
+				<div id="active-menu-item" class="nav-item nav-link active" >
+					<img class="menu-note" src="images/Common/MenuNote.svg" width="16" alt="">
+					<a class="nav-item" href="#">{{item.name}}</a>
+				</div>
+				{%- else -%}
+				<a class="nav-item nav-link" href="{{item.link}}">{{item.name}}</a>
+				{%- endif -%}
+				{%- if item.name != "Resources" -%}
+				<a class="menu-div nav-item navbar-text">|</a>
+				{%- endif -%}
+				{%- endfor -%}
+			</div>
+		</div>
+
 

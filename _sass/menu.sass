@@ -3,48 +3,73 @@
 $menu-font-size: 22px
 $menu-small-font-size: 16px
 
-#active-menu-item
-	display: flex
-	flex-direction: column
-	justify-content: flex-end
-
-	a
-		color: $white
-	img
-		margin: auto
-
-%navbar-shared
-	display: flex
-	flex-direction: column
-	justify-content: flex-end
-	font-size: $menu-font-size
-	font-weight: bold
-	color: $black
-	a
-		font-size: $menu-font-size
-	
-@media (max-width: 1199px) 
-	%navbar-shared
-		font-size: $menu-small-font-size
-		a
-			font-size: $menu-small-font-size
-
-.navbar-light .navbar-nav .nav-link
-	@extend %navbar-shared
-
-.navbar-light .navbar-nav .navbar-text
-	@extend %navbar-shared
-	padding-left: 12px
-	padding-right: 12px
-
-@media (max-width: 1199px) 
-	.navbar-light .navbar-nav .navbar-text
-		padding-left: 4px
-		padding-right: 4px
-
 .navbar
 	background-color: $light-blue
 
 .share-item
 	display: inline
 	width: 20px
+
+@media not all and (max-width: 991px) 
+	%navbar-shared
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		font-size: $menu-font-size
+		font-weight: bold
+		color: $black
+		a
+			font-size: $menu-font-size
+
+	#active-menu-item
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+
+		a
+			color: $white
+		img
+			margin: auto
+			
+	.navbar-light .navbar-nav .nav-link
+		@extend %navbar-shared
+
+	.navbar-light .navbar-nav .navbar-text
+		@extend %navbar-shared
+		padding-left: 12px
+		padding-right: 12px
+		
+		
+
+@media (max-width: 1199px) 
+	%navbar-shared-small
+		font-size: $menu-small-font-size
+		a
+			font-size: $menu-small-font-size
+	.navbar-light .navbar-nav .nav-link
+		@extend %navbar-shared-small
+	.navbar-light .navbar-nav .navbar-text
+		@extend %navbar-shared-small
+		padding-left: 4px
+		padding-right: 4px
+
+@media (max-width: 991px) 
+	.menu-note
+		display: none
+	.menu-div
+		display: none
+	.navbar-brand
+		margin-left: 15px
+	.navbar-nav .nav-link
+		padding-left: 30px
+		color: $white
+		background-color: $dark-blue-green
+		text-transform: uppercase
+		border-bottom: 1px solid $deep-blue
+	#active-menu-item
+		a
+			color: $white
+		background-color: $deep-blue
+	#navbarContent
+		border-top: 1px solid $deep-blue
+
