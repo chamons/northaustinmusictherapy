@@ -2,6 +2,9 @@
 
 #home-header
 	width: 100%
+#home-header-mobile
+	width: 100%
+	display: none
 
 #tagline
 	font-style: italic
@@ -9,9 +12,13 @@
 	padding-top: 6px
 	padding-bottom: 6px
 	margin-bottom: 0px
-	font-size: 26px
 	letter-spacing: 1px
 	color: $cream
+	background-color: $dark-blue-green
+	li
+		font-size: 2vw
+		display: inline
+		list-style: none
 
 #home-welcome-block
 	background-color: $white
@@ -58,3 +65,17 @@
 		text-align: left
 	li:nth-child(even)
 		text-align: right
+
+@media (max-width: 991px) 
+	#home-header
+		display: none
+	#home-header-mobile
+		display: block
+	#tagline
+		font-size: initial
+		li
+			font-size: 4vw
+			display: block
+	#home-welcome-block
+		h2
+			text-align: center
