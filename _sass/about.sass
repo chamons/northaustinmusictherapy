@@ -33,8 +33,9 @@
 		h2
 			text-align: center
 		h3
-			color: $black
 			font-weight: bold
+		.main-title
+			color: $black
 		h4
 			color: $black
 			font-weight: bold
@@ -92,9 +93,25 @@
 	width: 150px
 	height: 150px
 
+.main-bio-pic
+	width: 225px
+	height: 225px
+
+
+@media (max-width: 1199px)
+	.bio-pic
+		width: 125px
+		height: 125px
+	.main-bio-pic
+		width: 175px
+		height: 175px
+
 @media (max-width: 991px)
 	.bio-mobile-header
 		margin-top: 25px
+	.main-bio-pic
+		width: 200px
+		height: 200px		
 	.bio-pic
 		width: 200px
 		height: 200px
