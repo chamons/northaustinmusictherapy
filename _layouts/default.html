@@ -20,6 +20,8 @@
 		<img class="d-none d-lg-block" style="width: 100%;" src="images/Common/WaveHeader.png" alt="">
 		{%- endif -%}
 
+		<div id="{{page.title | downcase}}-mobile-title" class="mobile-title">{{page.title}}</div>
+
 		<div class="{{ page.title | downcase | remove: ".html" }}-content">
 {{ content }}
 		
