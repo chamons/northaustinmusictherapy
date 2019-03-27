@@ -65,10 +65,16 @@ li
 
 #CallToAction
 	text-align: center
-	font-size: 2.0vw
+	font-size: 24px
 	a
 		color: $dark-font-green
-		font-size: 2.0vw
+		font-size: 24px
+#CallToActionEmail
+	text-align: center
+	font-size: 18px
+	a
+		color: $dark-font-green
+		font-size: 18px
 
 #Copyright
 	text-align: center
@@ -81,15 +87,6 @@ li
 .round-image
 	border-radius: 50%
 	box-shadow: 3px 3px 10px
-
-.floating-down-half
-	margin-top: 330px
-
-.floating-down-twothirds
-	margin-top: 640px
-
-.floating-down-full
-	margin-top: 1100px
 
 %expand-button-template
 	color: $dark-font-green !important
@@ -139,6 +136,11 @@ li
 		line-height: 24px
 		a
 			font-size: 18px
+	#CallToActionEmail
+		font-size: 14px
+		line-height: 24px
+		a
+			font-size: 14px
 	#page-footer-content
 		margin-top: 30px
 		margin-bottom: 15px
@@ -153,10 +155,13 @@ li
 		display: block
 
 @media (max-width: $slim-desktop-version) 
-	.display-non-large
-		display: none !important
 	.row-center-on-less-xl
 		justify-content: center
+
+.share-menu
+	flex-basis: 180px
+	display: flex
+	justify-content: flex-end
 
 @import about
 @import home

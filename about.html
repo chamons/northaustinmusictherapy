@@ -36,7 +36,9 @@ background-color: white
 							<li>Additional Training in Neurologic Music Therapy</li>
 							<li>Speaks Regularly at State, Regional, and National Professional Conferences</li>
 						</ul>
-						{% include expandButton.html link='meredith-bio' text='Read the full bio here.' shown='true' %}
+						<div class="read-more-about">
+							{% include expandButton.html link='meredith-bio' text='Read the full bio here.' shown='true' %}
+						</div>
 						<div id="meredith-bio" class="bio collapse">
 							<p>A board-certified music therapist, Meredith uses her broad-based clinical training to create
 							effective, customized treatment approaches, both in individual therapy and group programming. Her
@@ -103,7 +105,9 @@ background-color: white
 									<li>Co-Author of <i>Music, Memory, and Meaning</i>, published 2017</li>
 									<li>Over Ten Years of Clinical Experience</li>
 								</ul>
-								{% include expandButton.html link='tara-bio' text='Read the full bio here.' shown='true' %}
+								<div class="read-more-about">
+									{% include expandButton.html link='tara-bio' text='Read the full bio here.' shown='true' %}
+								</div>
 								<div id="tara-bio" class="bio collapse">
 
 								<p>Tara has always had a passion for helping others. At a young age she began playing and listening
@@ -183,7 +187,9 @@ background-color: white
 									<li>Additional Training in ABA Principles and Neurologic Music Therapy</li>
 									<li>Completed Level II Training in the Bonny Method of Guided Imagery and Music</li>
 								</ul>
-								{% include expandButton.html link='brandy-bio' text='Read the full bio here.' shown='true' %}
+								<div class="read-more-about">
+									{% include expandButton.html link='brandy-bio' text='Read the full bio here.' shown='true' %}
+								</div>
 								<div id="brandy-bio" class="bio collapse">
 									<p>Brandy Jenkins, MA, MT-BC moved to Austin in the Spring of 2018, and currently serves adults
 									with IDD, well older adults, and those living with Alzheimer’s disease and dementia. Brandy has
@@ -221,7 +227,9 @@ background-color: white
 									<li>Started at North Austin Music Therapy in 2016</li>
 									<li>Classically Trained Pianist and Adaptive Lesson Specialist</li>
 								</ul>
-								{% include expandButton.html link='annie-bio' text='Read the full bio here.' shown='true' %}
+								<div class="read-more-about">
+									{% include expandButton.html link='annie-bio' text='Read the full bio here.' shown='true' %}
+								</div>
 								<div id="annie-bio" class="bio collapse">
 									<p>Annie&#39;s music therapy practice emphasizes a strengths-based approach while also incorporating
 									techniques supported by research to assist all of her clients in reaching their goals. Annie’s
@@ -347,15 +355,16 @@ background-color: white
 		featured on our local news, and speak regularly at conferences and events locally,
 		regionally, and nationally.</p>
 
-		<div id="about-bottom-block" class="container-fluid">
+		<!-- Hack - I couldn't get 4 col desktop into 2 col 2 row working in bootstrap consistnetly so C&P -->
+		<div class="about-bottom-block container-fluid d-none d-lg-block">
 			<div class="row">
 				<div class="col-lg d-flex flex-column justify-content-center about-where">
-					<a href="https://www.amazon.com/Musically-Engaged-Seniors-Session-Resources/dp/0615896286">
+					<a target="_blank" rel="noopener" href="https://www.amazon.com/Musically-Engaged-Seniors-Session-Resources/dp/0615896286">
 						<img class="img-fluid" src="images/About/MusicallyEngagedSeniorsBook.jpg" width="300" alt="Musically Engaged Seniors">
 					</a>
 				</div>
 				<div class="col-lg d-flex flex-column justify-content-center about-where"> 
-					<a href="https://www.amazon.com/Music-Memory-Meaning-Effectively-Connect/dp/0999246909">
+					<a target="_blank" rel="noopener" href="https://www.amazon.com/Music-Memory-Meaning-Effectively-Connect/dp/0999246909">
 						<img class="img-fluid" src="images/About/MusicMemoryAndMeaningBook.jpg" width="300" alt="Music, Memory, and Meaning">
 					</a>
 				</div>
@@ -368,10 +377,41 @@ background-color: white
 				</div>
 				<div class="col-lg d-flex flex-column justify-content-center about-where"> 
 					<p class="text-center" style="margin-top:15px;">Featured on MusicTherapyED.com </p>
-					<a href="https://musictherapyed.com/meredith-hamons-zero-full-time-older-adults/">
+					<a target="_blank" rel="noopener" href="https://musictherapyed.com/meredith-hamons-zero-full-time-older-adults/">
 						<img style="margin-top:15px;" class="img-fluid" src="images/About/MusicTherapyEd.png" width="300" alt="Music, Memory, and Meaning">
 					</a>
 				</div>
 			</div>
 		</div>
+
+		<div class="about-bottom-block container-fluid d-lg-none">
+			<div class="row">
+				<div class="col d-flex flex-column justify-content-center about-where">
+					<a target="_blank" rel="noopener" href="https://www.amazon.com/Musically-Engaged-Seniors-Session-Resources/dp/0615896286">
+						<img class="img-fluid" src="images/About/MusicallyEngagedSeniorsBook.jpg" width="300" alt="Musically Engaged Seniors">
+					</a>
+				</div>
+				<div class="col d-flex flex-column justify-content-center about-where"> 
+					<a target="_blank" rel="noopener" href="https://www.amazon.com/Music-Memory-Meaning-Effectively-Connect/dp/0999246909">
+						<img class="img-fluid" src="images/About/MusicMemoryAndMeaningBook.jpg" width="300" alt="Music, Memory, and Meaning">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col d-flex flex-column justify-content-center about-where">
+					<p class="text-center" style="margin-top:35px;"> Featured on KVUE News</p>
+					<video style="width: 100%; margin-top:20px;" controls preload=metadata poster="images/About/VideoStill.png">
+						<source src="images/About/KVUEStory.mp4" type="video/mp4">
+						Sorry, your browser doesn't support embedded videos to see the KVUE Video.
+					</video>
+				</div>
+				<div class="col d-flex flex-column justify-content-center about-where"> 
+					<p class="text-center" style="margin-top:15px;">Featured on MusicTherapyED.com </p>
+					<a target="_blank" rel="noopener" href="https://musictherapyed.com/meredith-hamons-zero-full-time-older-adults/">
+						<img style="margin-top:15px;" class="img-fluid" src="images/About/MusicTherapyEd.png" width="300" alt="Music, Memory, and Meaning">
+					</a>
+				</div>
+			</div>
+		</div>
+
 	</div>
