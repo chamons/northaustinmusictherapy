@@ -63,12 +63,12 @@ li
 	h1
 		color: $black
 
-#CallToAction
+.CallToAction
 	text-align: center
-	font-size: 2.0vw
+	font-size: 24px
 	a
 		color: $dark-font-green
-		font-size: 2.0vw
+		font-size: 24px
 
 #Copyright
 	text-align: center
@@ -134,7 +134,7 @@ li
 	padding-bottom: 6px
 
 @media (max-width: $tablet-version) 
-	#CallToAction
+	.CallToAction
 		font-size: 18px
 		line-height: 24px
 		a
@@ -157,6 +157,11 @@ li
 		display: none !important
 	.row-center-on-less-xl
 		justify-content: center
+
+.share-menu
+	flex-basis: 180px
+	display: flex
+	justify-content: flex-end
 
 @import about
 @import home
