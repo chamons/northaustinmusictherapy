@@ -1,4 +1,5 @@
 @import colors
+@import sizes
 
 .about-content
 	background-color: $white
@@ -33,7 +34,7 @@
 	margin-left: 10px
 	margin-right: 10px
 
-@media (max-width: 991px)
+@media (max-width: $tablet-version)
 	.about-where
 		background-color: unset
 		padding: 0px
@@ -41,7 +42,6 @@
 		margin-right: 0px
 	.about-content
 		h1
-		h2
 			text-align: center
 		h3
 			font-weight: bold
@@ -71,7 +71,7 @@
 .carousel-item
 	background-size: cover
 	background-position: center center
-	height: 140px
+	height: 160px
 	padding-left: 140px
 	padding-right: 140px
 	padding-top: 0px
@@ -102,23 +102,27 @@
 	padding-top: 25px
 
 .bio-pic
-	width: 150px
-	height: 150px
+	width: 125px
+	height: 125px
 
 .main-bio-pic
-	width: 225px
-	height: 225px
+	width: 200px
+	height: 200px
 
 
-@media (max-width: 1199px)
+@media (max-width: $tablet-version)
+	.bio-mobile-header
+		margin-top: 25px
 	.bio-pic
-		width: 125px
-		height: 125px
+		margin-top: 10px
+		width: 175px
+		height: 175px
 	.main-bio-pic
+		margin-top: 10px
 		width: 175px
 		height: 175px
 
-@media (max-width: 991px)
+@media (max-width: $mobile-version)
 	.bio-mobile-header
 		margin-top: 25px
 	.main-bio-pic

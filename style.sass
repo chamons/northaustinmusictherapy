@@ -3,6 +3,7 @@
 
 @import colors
 @import menu
+@import sizes
 
 %default-font
 	font-family: 'Montserrat', sans-serif
@@ -132,8 +133,7 @@ li
 	padding-top: 6px
 	padding-bottom: 6px
 
-
-@media (max-width: 991px) 
+@media (max-width: $tablet-version) 
 	#CallToAction
 		font-size: 18px
 		line-height: 24px
@@ -145,8 +145,6 @@ li
 	#page-footer-content
 		margin-top: 30px
 		margin-bottom: 10px
-	.navbar
-		padding-bottom: 2rem
 	.display-non-medium
 		display: none !important
 	p
@@ -154,7 +152,7 @@ li
 	.mobile-title
 		display: block
 
-@media (max-width: 1199px) 
+@media (max-width: $slim-desktop-version) 
 	.display-non-large
 		display: none !important
 	.row-center-on-less-xl

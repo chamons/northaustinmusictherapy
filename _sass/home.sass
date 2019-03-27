@@ -1,4 +1,5 @@
 @import colors
+@import sizes
 
 #home-header
 	width: 100%
@@ -66,12 +67,12 @@
 		text-align: right
 
 
-@media (max-width: 1199px) 
+@media (max-width: $slim-desktop-version) 
 	#home-welcome-text
 		padding-left: 40px
 		padding-right: 40px
 
-@media (max-width: 991px) 
+@media (max-width: $mobile-version) 
 	#home-welcome-text
 		padding-left: 0px
 		padding-right: 0px
