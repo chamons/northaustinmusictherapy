@@ -20,7 +20,7 @@
 				<div class="navbar-nav mx-auto">
 					{%- for item in site.data.menu -%}
 					{%- if page.url == item.link -%}
-					<div id="active-menu-item" class="nav-item nav-link active" >
+					<div class="active-menu-item nav-item nav-link active" >
 						<img class="menu-note" src="images/Common/MenuNote.svg" width="16" alt="">
 						<a class="nav-item" href="#">{{item.name}}</a>
 					</div>
@@ -40,7 +40,7 @@
 			<div class="navbar-nav mx-auto">
 				{%- for item in site.data.menu -%}
 				{%- if page.url == item.link -%}
-				<div id="active-menu-item" class="nav-item nav-link active" >
+				<div class="active-menu-item nav-item nav-link active" >
 					<img class="menu-note" src="images/Common/MenuNote.svg" width="16" alt="">
 					<a class="nav-item" href="#">{{item.name}}</a>
 				</div>
